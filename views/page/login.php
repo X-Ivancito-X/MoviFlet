@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../views/css/style.css">
-    <link rel="stylesheet" href="../views/css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
 <div class="FondoImagen"></div>
     <header class="Encabezado">
         <div class="LogoContenedor">
             <div class="Empresa" id="logoMenu">
-                <img src="../views/img/fer.png" alt="Logo de la empresa">
+                <img src="../img/fer.png" alt="Logo de la empresa">
             </div>
             <nav class="MenuDesplegable" id="menuDesplegable">
                 <a href="#">Servicios</a>
@@ -21,7 +21,7 @@
             </nav>
         </div>
         <nav class="Menu">
-            <a href="../index.php">Volver</a>
+            <a href="../../index.php">Volver</a>
         </nav>
     </header>
     
@@ -44,10 +44,7 @@
                         <button type="submit" name="Ingreso" value="Iniciar" class="BotonPrimario">Iniciar Sesión</button>
                     </div>
                     
-                    <?php
-                    include("../model/login.php");   
-                    ?>
-                    
+                
                     <div class="GrupoFormulario">
                         <a href="crear.php" class="BotonSecundario">Crear Cuenta</a>
                     </div>
@@ -56,6 +53,6 @@
         </div>
     </div>
 
-    <script src="../views/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Experience</title>
     <link rel="stylesheet" href="views/css/style.css">
-    <link rel="stylesheet" href="views/css/index.css">
+    <link rel="stylesheet" href="views/css/inde.css">
 </head>
 <body>
-    <div class="FondoImagen"></div>
+   
     
     <header class="Encabezado">
         <div class="LogoContenedor">
@@ -23,7 +23,7 @@
         </div>
         <nav class="MenuPrincipal">
             <a href="index.php" class="Activo">Inicio</a>
-            <a href="pag/login.php" class="BotonAcceso">Acceder</a>
+            <a href="views/page/login.php" class="BotonAcceso">Acceder</a>
         </nav>
     </header>
     
@@ -33,8 +33,8 @@
                 <h1>Experiencia de Lujo Incomparable</h1>
                 <p class="Subtitulo">Descubre un mundo de exclusividad y elegancia a tu alcance</p>
                 <div class="BotonesHero">
-                    <a href="pag/login.php" class="BotonPrimario">Iniciar Sesión</a>
-                    <a href="pag/crear.php" class="BotonSecundario">Crear Cuenta</a>
+                    <a href="views/page/login.php" class="BotonPrimario">Iniciar Sesión</a>
+                    <a href="views/page/crear.php" class="BotonSecundario">Crear Cuenta</a>
                 </div>
             </div>
         </section>
@@ -75,7 +75,7 @@
             <div class="ContenedorCTA">
                 <h2>Únete a Nuestra Comunidad Exclusiva</h2>
                 <p>Descubre los beneficios de formar parte de nuestra selecta comunidad de miembros.</p>
-                <a href="crear.php" class="BotonPrimario">Crear Cuenta</a>
+                <a href="views/page/crear.php" class="BotonPrimario">Crear Cuenta</a>
             </div>
         </section>
     </main>
@@ -83,7 +83,7 @@
     <footer class="PiePagina">
         <div class="ContenedorPie">
             <div class="InfoEmpresa">
-                <img src="../views/img/empresa.png" alt="Logo de la empresa" class="LogoPie">
+                <img src="views/img/empresa.png" alt="Logo de la empresa" class="LogoPie">
                 <p></p>
             </div>
             

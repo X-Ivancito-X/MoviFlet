@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Cuenta</title>
-    <link rel="stylesheet" href="../views/css/style.css">
-    <link rel="stylesheet" href="../views/css/crear.css">
-    <link rel="stylesheet" href="../views/css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crear.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <div class="FondoImagen"></div>
+  <div class="FondoImagen"></div>
     
     <header class="Encabezado">
         <div class="LogoContenedor">
             <div class="Empresa" id="logoMenu">
-                <img src="../views/img/empresa.png" alt="Logo de la empresa">
+                <img src="../img/fer.png" alt="Logo de la empresa">
             </div>
             <nav class="MenuDesplegable" id="menuDesplegable">
                 <a href="#">Servicios</a>
@@ -23,7 +23,7 @@
             </nav>
         </div>
         <nav class="Menu">
-            <a href="../index.php">Inicio</a>
+            <a href="../../index.php">Inicio</a>
             <a href="login.php">Iniciar Sesión</a>
         </nav>
     </header>
@@ -70,7 +70,6 @@
                                 <option value="">Selecciona un tipo</option>
                                 <option value="1">Cliente</option>
                                 <option value="2">Conductor</option>
-                                <option value="3">Administrador</option>
                             </select>
                             <div class="Error" id="id_tipo-error">Por favor selecciona un tipo de usuario</div>
                         </div>
@@ -138,6 +137,6 @@
         </div>
     </div>
 
-    <script src="../views/js/crear.js"></script>
+    <script src="../js/crear.js"></script>
 </body>
 </html>
