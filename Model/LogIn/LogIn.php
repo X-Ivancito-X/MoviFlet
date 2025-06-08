@@ -1,14 +1,13 @@
 <?php
-    include("../../Controller/ConBD.php");
+    include("./Controller/ConBD.php");
     if(!empty($_POST["Ingresar"])){
-        $Email = $_POST["EmailUsuario"];
-        $Usuario = $_POST["EmailUsuario"];
+        $EmailUsuario = $_POST["Usuario"];
         $Contraseña = $_POST["Contraseña"];
 
         $Login = "SELECT * FROM login where Email = ? or Usuario = ? and Contraseña = ?";
 
         $QueryPreparada = $ConBD->prepare($Login);
-        $QueryPreparada->bind_param('sss', $Email, $Usuario, $Contraseña);
+        $QueryPreparada->bind_param('ss', $EmailUsusario, $Contraseña);
         $QueryPreparada->execute();
         $RST = $QueryPreparada->get_result();
 

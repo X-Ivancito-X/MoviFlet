@@ -1,5 +1,5 @@
 <?php	                             
-    $ConBD = new mysqli("localhost","root","","");
+    $ConBD = new mysqli("localhost","root","","moviflet");
     $ConBD -> set_charset("utf8");
     
 ?>
