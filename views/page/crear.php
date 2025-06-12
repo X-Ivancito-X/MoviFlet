@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Cuenta</title>
-    <link rel="stylesheet" href="../views/css/style.css">
-    <link rel="stylesheet" href="../views/css/crear.css">
-    <link rel="stylesheet" href="../views/css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crear.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
     <div class="FondoImagen"></div>
@@ -54,7 +54,7 @@
                     
                     <div class="GrupoFormulario">
                         <label for="correo" class="Texto">Correo Electrónico</label>
-                        <input type="email" id="correo" name="Correo" maxlength="100">
+                        <input type="email" id="correo" name="Email" maxlength="100">
                         <div class="Error" id="correo-error">Por favor ingresa un correo electrónico válido</div>
                     </div>
                     
@@ -102,7 +102,7 @@
                         </div>
                         <div class="GrupoFormulario">
                             <label for="password" class="Texto">Contraseña</label>
-                            <input type="password" id="password" name="Contrasena" maxlength="30">
+                            <input type="password" id="password" name="Contraseña" maxlength="30">
                             <div class="Error" id="password-error">Por favor ingresa una contraseña</div>
                         </div>
                     </div>
@@ -138,6 +138,6 @@
         </div>
     </div>
 
-    <script src="../views/js/crear.js"></script>
+    <script src="../js/crear.js"></script>
 </body>
 </html>

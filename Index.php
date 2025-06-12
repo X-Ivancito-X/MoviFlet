@@ -33,8 +33,8 @@
                 <h1>Experiencia de Lujo Incomparable</h1>
                 <p class="Subtitulo">Descubre un mundo de exclusividad y elegancia a tu alcance</p>
                 <div class="BotonesHero">
-                    <a href="pag/login.php" class="BotonPrimario">Iniciar Sesión</a>
-                    <a href="pag/crear.php" class="BotonSecundario">Crear Cuenta</a>
+                    <a href="Views/page/login.php" class="BotonPrimario">Iniciar Sesión</a>
+                    <a href="Views/page/crear.php" class="BotonSecundario">Crear Cuenta</a>
                 </div>
             </div>
         </section>

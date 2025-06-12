@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../views/css/style.css">
-    <link rel="stylesheet" href="../views/css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
 <div class="FondoImagen"></div>
@@ -45,7 +45,9 @@
                     </div>
                     
                     <?php
-                    include("../model/login.php");   
+                        include("./Controller/ConBD.php");
+                        include("./Model/LogIn/LogIn.php");
+
                     ?>
                     
                     <div class="GrupoFormulario">
@@ -56,6 +58,6 @@
         </div>
     </div>
 
-    <script src="../views/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
