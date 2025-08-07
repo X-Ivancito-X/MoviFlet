@@ -1,0 +1,412 @@
+.MenuPrincipal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.MenuPrincipal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.MenuPrincipal a:hover, .MenuPrincipal a.Activo {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #f0f0f0;
+}
+
+.MenuPrincipal .BotonAcceso {
+    background-color: #6c63ff;
+    color: white;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.MenuPrincipal .BotonAcceso:hover {
+    background-color: #5a52d5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+}
+
+/* Menú desplegable del logo */
+.LogoContenedor {
+    position: relative;
+}
+
+.Empresa {
+    cursor: pointer;
+    position: relative;
+    z-index: 101;
+}
+
+.Empresa img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.Empresa.Activo img {
+    transform: scale(1.05);
+}
+
+.MenuDesplegable {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(15, 15, 20, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.MenuDesplegable.Mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.MenuDesplegable:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(15, 15, 20, 0.9);
+    transform: rotate(45deg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.MenuDesplegable a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.MenuDesplegable a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+}
+
+/* Sección Hero */
+.Hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.ContenedorHero {
+    max-width: 900px;
+    background-color: rgba(15, 15, 20, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 60px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.Hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.Hero .Subtitulo {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.BotonesHero {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.BotonesHero .BotonPrimario, .BotonesHero .BotonSecundario {
+    min-width: 180px;
+}
+
+/* Sección de Características */
+.Caracteristicas {
+    padding: 80px 20px;
+}
+
+.ContenedorCaracteristicas {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(15, 15, 20, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 60px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.Caracteristicas h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.TarjetasCaracteristicas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Tarjeta {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.Tarjeta:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.IconoTarjeta {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(108, 99, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.IconoTarjeta svg {
+    color: #6c63ff;
+    width: 30px;
+    height: 30px;
+}
+
+.Tarjeta h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.Tarjeta p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* Sección CTA */
+.CTA {
+    padding: 80px 20px;
+}
+
+.ContenedorCTA {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(15, 15, 20, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.CTA h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.CTA p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CTA .BotonPrimario {
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Pie de página */
+.PiePagina {
+    background-color: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(10px);
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ContenedorPie {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px 40px 20px;
+}
+
+.InfoEmpresa {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.LogoPie {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.InfoEmpresa p {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.Enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.GrupoEnlaces {
+    min-width: 160px;
+    margin-bottom: 30px;
+}
+
+.GrupoEnlaces h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.GrupoEnlaces a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.GrupoEnlaces a:hover {
+    color: #6c63ff;
+    transform: translateX(5px);
+}
+
+.Derechos {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Derechos p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .Hero h1 {
+        font-size: 36px;
+    }
+    
+    .Hero .Subtitulo {
+        font-size: 18px;
+    }
+    
+    .BotonesHero {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .BotonesHero .BotonPrimario, .BotonesHero .BotonSecundario {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .Caracteristicas h2, .CTA h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .MenuPrincipal {
+        display: none; /* En móvil se reemplazaría por un menú hamburguesa */
+    }
+    
+    .ContenedorHero, .ContenedorCaracteristicas, .ContenedorCTA {
+        padding: 40px 20px;
+    }
+    
+    .Hero {
+        min-height: 60vh;
+    }
+    
+    .Caracteristicas, .CTA {
+        padding: 40px 20px;
+    }
+    
+    .ContenedorPie {
+        flex-direction: column;
+    }
+    
+    .InfoEmpresa {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .InfoEmpresa p {
+        max-width: 100%;
+    }
+    
+    .Enlaces {
+        justify-content: space-around;
+    }
+}
