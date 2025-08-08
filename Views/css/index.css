@@ -410,3 +410,560 @@
         justify-content: space-around;
     }
 }
+
+
+/* Contenedores y Layouts */
+
+.ContenedorFlex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ContenedorGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.ContenedorColumna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botones Variantes */
+
+.BotonPrimario {
+    background-color: #6c63ff;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.BotonPrimario:hover {
+    background-color: #5a52d5;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+}
+
+.BotonSecundario {
+    background-color: transparent;
+    color: #6c63ff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #6c63ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.BotonSecundario:hover {
+    background-color: #6c63ff;
+    color: white;
+}
+
+/* Formularios */
+
+.Formulario {
+    background-color: rgba(20, 20, 30, 0.7);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.InputTexto, .InputPassword, .InputEmail, select {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.InputTexto:focus, .InputPassword:focus, .InputEmail:focus, select:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background-color: rgba(108, 99, 255, 0.15);
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+/* Labels */
+
+.Label {
+    display: block;
+    color: #ccc;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Checks y Radios */
+
+.Checkbox, .Radio {
+    accent-color: #6c63ff;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: accent-color 0.3s ease;
+}
+
+.Checkbox:hover, .Radio:hover {
+    accent-color: #5a52d5;
+}
+
+/* Listas */
+
+.ListaHorizontal {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.ListaHorizontal li a {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.ListaHorizontal li a:hover {
+    background-color: rgba(108, 99, 255, 0.3);
+}
+
+/* Tarjetas */
+
+.TarjetaOscura {
+    background-color: rgba(20, 20, 30, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    padding: 30px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.TarjetaOscura:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(108, 99, 255, 0.6);
+}
+
+/* Tipografías */
+
+.TituloGrande {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.TituloMediano {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.TextoNormal {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.TextoPequeño {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Animaciones */
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.AnimacionSlideDown {
+    animation: slideDown 0.5s ease forwards;
+}
+
+.AnimacionSlideUp {
+    animation: slideUp 0.5s ease forwards;
+}
+
+/* Tablas */
+
+.Tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(20, 20, 30, 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.Tabla th, .Tabla td {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    text-align: left;
+}
+
+.Tabla th {
+    background-color: rgba(108, 99, 255, 0.8);
+    font-weight: 700;
+}
+
+.Tabla tr:hover {
+    background-color: rgba(108, 99, 255, 0.15);
+}
+
+/* Modales */
+
+.ModalFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 15, 20, 0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.ModalFondo.Mostrar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ModalContenedor {
+    background-color: rgba(20, 20, 30, 0.95);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    position: relative;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.ModalCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.ModalCerrar:hover {
+    color: #6c63ff;
+}
+
+/* Formularios dentro de modal */
+
+.FormularioModal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FormularioModal input, .FormularioModal select {
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.FormularioModal input:focus, .FormularioModal select:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background-color: rgba(108, 99, 255, 0.15);
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+/* Botones en modal */
+
+.BotonModal {
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.BotonModal:hover {
+    background-color: #5a52d5;
+}
+
+/* Paginación */
+
+.Paginacion {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.Paginacion boton {
+    background-color: rgba(108, 99, 255, 0.3);
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Paginacion boton:hover, .Paginacion boton.Activo {
+    background-color: #6c63ff;
+}
+
+/* Tooltips */
+
+.Tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.TooltipTexto {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(20, 20, 30, 0.95);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.Tooltip:hover .TooltipTexto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Avatares */
+
+.Avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(108, 99, 255, 0.6);
+    transition: border-color 0.3s ease;
+}
+
+.Avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Avatar:hover {
+    border-color: #6c63ff;
+}
+
+/* Tabs */
+
+.Tabs {
+    display: flex;
+    border-bottom: 2px solid rgba(108, 99, 255, 0.4);
+    gap: 10px;
+}
+
+.Tab {
+    padding: 14px 30px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.Tab.Activo {
+    background-color: #6c63ff;
+    color: white;
+}
+
+/* Alerts */
+
+.Alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.Alert.Exito {
+    background-color: rgba(76, 175, 80, 0.3);
+    color: #4caf50;
+}
+
+.Alert.Error {
+    background-color: rgba(244, 67, 54, 0.3);
+    color: #f44336;
+}
+
+.Alert.Info {
+    background-color: rgba(33, 150, 243, 0.3);
+    color: #2196f3;
+}
+
+/* Loaders */
+
+.Loader {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid #6c63ff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: girar 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Scroll To Top Button */
+
+.ScrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6c63ff;
+    color: white;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.5);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    display: none;
+}
+
+.ScrollTop.visible {
+    display: block;
+}
+
+.ScrollTop:hover {
+    background-color: #5a52d5;
+}
+
+/* Responsive Utilities */
+
+@media (max-width: 768px) {
+    .ContenedorFlex, .ContenedorGrid {
+        flex-direction: column;
+        grid-template-columns: 1fr !important;
+    }
+
+    .BotonPrimario, .BotonSecundario {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 18px;
+    }
+
+    .Tabs {
+        flex-wrap: wrap;
+    }
+
+    .Tab {
+        flex: 1 1 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+}
+
+/* Helpers */
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.TextCenter {
+    text-align: center !important;
+}
+
+.Hidden {
+    display: none !important;
+}
+
+/* Extras: Variaciones de sombra */
+
+.SombraLigera {
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.15);
+}
+
+.SombraMedia {
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+.SombraFuerte {
+    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.5);
+}
+
+/* Variaciones de borde */
+
+.BordeSimple {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.BordeGrueso {
+    border: 3px solid rgba(108, 99, 255, 0.6);
+}
+
+/* Variaciones de fondo */
+
+.FondoClaro {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.FondoOscuro {
+    background-color: rgba(10, 10, 15, 0.9);
+}
