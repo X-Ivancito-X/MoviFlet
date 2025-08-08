@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -45,9 +47,8 @@
                     </div>
                     
                     <?php
-                        include("./Controller/ConBD.php");
-                        include("./Model/LogIn/LogIn.php");
-
+                       include ("../../Controller/ConBD.php");
+                       include("../../Model/LogIn/LogIn.php");
                     ?>
                     
                     <div class="GrupoFormulario">
